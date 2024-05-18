@@ -1,0 +1,12 @@
+body {
+  color: var(--color-primary) !important;
+  margin: 50px !important;
+}
+.b-to-top,
+.b-feedback {
+  display: none;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--background-secondary);
+}

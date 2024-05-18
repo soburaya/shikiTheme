@@ -1,0 +1,62 @@
+.p-dashboards-show .v2 .fc-ongoings .inner {
+  @include createBlock;
+  margin-left: 0px !important;
+  margin-bottom: 0px !important;
+}
+.p-dashboards-show .v2 .db-update .tags {
+  height: unset !important;
+}
+.tooltip-inner {
+  @include createBlock;
+}
+
+.tooltip-arrow {
+  display: none;
+}
+.tooltip-inner .close {
+  top: 20px !important;
+  right: 20px !important;
+  background: none !important;
+}
+.b-tag.active[href],
+.b-tag[href]:hover {
+  transition: 0.4s ease;
+  padding: 5px !important;
+  margin: 0 !important;
+  background-color: var(--background-primary) !important;
+  color: var(--color-secondary) !important;
+}
+.b-db_entry-variant-list_item > .info .line .value > a,
+.b-db_entry-variant-list_item > .info .line .value > div,
+.b-db_entry-variant-list_item > .info .line .value > span {
+  margin: 0 !important;
+}
+.b-catalog_entry .cover .image-decor img {
+  border-radius: 10px;
+  border: unset !important;
+}
+.block2 {
+  @include createBlock;
+}
+.p-dashboards-show .v2 .fc-ongoings .inner > .b-catalog_entry {
+  margin-bottom: 0 !important;
+}
+.b-shiki_editor-v2 footer,
+.b-shiki_editor footer {
+  display: block !important;
+}
+
+.b-form input[type="submit"],
+.b-shiki_editor-v2 footer .cancel:not(a),
+.b-shiki_editor-v2 footer .hide:not(a) {
+  @include createBlock;
+  padding: 10px 20px !important;
+  line-height: 23px !important;
+}
+.b-shiki_editor-v2 aside.markers .b-summary_marker:before,
+.b-shiki_editor-v2 aside.markers .b-offtopic_marker:before {
+  display: none !important;
+}
+.p-dashboards-show .v2 {
+  padding-top: 0 !important;
+}

@@ -1,0 +1,28 @@
+// ---------------- 1. vars -----------------
+
+@import "settings/vars";
+@import "settings/reset";
+
+// ---------------- 2. fonts ----------------
+
+@import "mixins/breakpoints";
+@import "mixins/font-face";
+@import "mixins/mixins";
+
+// ---------------- 3. reset styles ---------
+
+@import "settings/fonts";
+
+// ---------------- 4. mixins ---------------
+
+@import "assets/color";
+@import "assets/defaults";
+@import "assets/comments";
+@import "components/profile";
+@import "components/general/header";
+@import "components/general/search";
+@import "components/home";
+
+// https://i.pinimg.com/originals/a3/f3/ab/a3f3abe546f87d7bceb19ff1f3eea602.gif
+// https://i.pinimg.com/originals/4c/01/bc/4c01bc46119eafd6ad52c72e3f6baa5a.gif
+// https://static.wixstatic.com/media/d81b0f_185f788dfce041c9964b478cd1c513b7~mv2.gif

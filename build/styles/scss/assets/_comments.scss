@@ -1,0 +1,49 @@
+.menubar[data-v-082d85bb],
+.b-shiki_editor .controls {
+  @include createBlock;
+  padding: 5px 20px !important;
+  height: unset !important;
+}
+.editor-controls {
+  display: flex;
+  align-items: center;
+
+  span {
+    padding: 5px 0 !important;
+  }
+}
+.b-shiki_editor .body .editor textarea {
+  height: unset !important;
+}
+.b-button {
+  @include createBlock;
+  padding: 10px 20px !important;
+  line-height: 23px !important;
+}
+.about-bb_codes {
+  display: none;
+}
+.menubar .icons[data-v-082d85bb] {
+  color: var(--color-primary) !important;
+}
+.ProseMirror,
+.editor-area {
+  margin-top: 15px !important;
+  @include createBlock;
+}
+
+.b-comments {
+  @include createBlock;
+}
+
+.b-comment {
+  transition: 0.4s ease;
+  filter: blur(2px);
+}
+
+.b-comment:hover {
+  filter: unset;
+}
+#profiles_show div.block:nth-child(3) > .subheadline {
+  display: none;
+}

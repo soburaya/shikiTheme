@@ -1,0 +1,103 @@
+@mixin container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: $container;
+}
+
+@mixin paddingBlock {
+  padding: 30px;
+}
+
+@mixin borderBlock {
+  border-radius: 30px;
+}
+@mixin gapElement {
+  gap: 30px;
+}
+
+@mixin createBlock {
+  background-color: var(--background-secondary) !important;
+  border: 1px solid var(--border-secondary) !important;
+  border-radius: 30px !important;
+  padding: 30px !important;
+}
+
+@mixin createLink {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid var(--border-secondary);
+  border-radius: 30px;
+
+  &:hover {
+    transition: 0.4s ease;
+    text-decoration: none !important;
+    background-color: var(--background-primary) !important;
+    color: var(--color-secondary) !important;
+    border-bottom-color: unset !important;
+  }
+}
+// ---------------- flex ----------------
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-between__fe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@mixin flex-between__fs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin flex-fs {
+  display: flex;
+  align-items: flex-start;
+}
+
+@mixin flex-fe {
+  display: flex;
+  align-items: flex-end;
+}
+@mixin flex-fs__center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flex-fe__center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+// ---------------- images ----------------
+
+@mixin bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// ---------------- pseudo-classes, pseudo-elements ----------------
+
+@mixin not-last-mb($value) {
+  &:not(:last-child) {
+    margin-right: $value;
+  }
+}
+
+@mixin not-first-mt($value) {
+  &:not(:first-child) {
+    margin-top: $value;
+  }
+}

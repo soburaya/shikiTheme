@@ -1,0 +1,27 @@
+// ---------------- $color-text ----------------
+
+:root {
+  --color-primary: #cccccc !important;
+  --color-secondary: #0a0a0a !important;
+
+  --background-primary: #cccccc !important;
+  --background-secondary: #0a0a0a !important;
+
+  --border-primary: #cccccc !important;
+  --border-secondary: #252525 !important;
+
+  --font-icon: "Material Symbols Outlined", sans-serif;
+}
+
+// ---------------- $color-borders ----------------
+
+$color-borders: gray;
+$background: #f5f5f5;
+
+// ---------------- $font ----------------
+
+$primaryfont: "";
+
+// ---------------- $other ----------------
+
+$container: 1240px;
