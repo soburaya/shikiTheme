@@ -26,15 +26,18 @@
         bottom: 30px;
         right: 30px;
       }
+
       img {
         @include borderBlock;
       }
     }
+
     header {
       .notice {
         display: none !important;
       }
     }
+
     header.head.misc:after {
       font-size: 11px;
       content: "痛みを知らぬ者に本当の平和は分からん";
@@ -43,6 +46,7 @@
       margin-top: 15px;
     }
   }
+
   .c-history {
     @include createBlock;
     margin: 0 !important;
@@ -59,22 +63,28 @@
       .title {
         text-decoration: none !important;
       }
-      + .entry {
+
+      +.entry {
         margin-top: 10px !important;
       }
+
       &:hover {
         filter: unset;
       }
     }
   }
+
   .c-mobile-actions {
     display: none !important;
   }
+
   .c-info {
     @include createBlock;
     align-content: center;
-    height: max-content;
+
+
     .c-lists-info .b-stats_bar {
+
       margin-bottom: 0 !important;
       display: grid;
       grid-template-rows: 1fr 1fr;
@@ -91,6 +101,7 @@
           margin: 0 auto;
           font-size: 13px !important;
         }
+
         &:hover {
           * {
             color: var(--color-secondary) !important;
@@ -100,6 +111,7 @@
               color: var(--color-secondary) !important;
             }
           }
+
           .size {
             color: var(--color-secondary) !important;
 
@@ -110,6 +122,7 @@
           }
         }
       }
+
       .bar {
         display: flex;
         height: 11px;
@@ -119,22 +132,27 @@
         .first {
           background: var(--border-primary) !important;
         }
+
         .second {
           background: var(--border-secondary) !important;
         }
+
         div {
           font-size: 0 !important;
         }
       }
+
       .title {
         margin-bottom: 15px !important;
       }
+
       .stat_names {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 15px !important;
         gap: 20px;
+
         &::after {
           display: none;
         }
@@ -144,6 +162,7 @@
 
           a {
             font-family: var(--font-icon) !important;
+
             &:before {
               font-size: 40px;
               font-weight: normal;
@@ -157,12 +176,14 @@
               direction: ltr;
             }
           }
+
           .size {
             margin-left: 5px;
 
             &::before {
               margin-right: 5px;
             }
+
             &::after {
               margin-left: 5px;
             }
@@ -176,16 +197,19 @@
           &:after {
             display: none !important;
           }
+
           &:nth-child(1) {
             a::before {
               content: "\e065" !important;
             }
           }
+
           &:nth-child(2) {
             a::before {
               content: "\e05f" !important;
             }
           }
+
           &:nth-child(3) {
             a::before {
               content: "\eb80" !important;
@@ -193,16 +217,20 @@
           }
         }
       }
+
       .compatibility {
         width: max-content;
         margin: 0 auto;
+
         a {
           display: unset !important;
 
           span.text {
             display: none;
           }
+
           span.rate {
+
             &:before,
             &:after {
               display: none;
@@ -210,6 +238,7 @@
           }
         }
       }
+
       &::before {
         display: none !important;
       }
@@ -239,32 +268,41 @@
       border: 1px solid var(--border-secondary);
       border-radius: 50%;
     }
+
     &:hover {
       background-color: var(--border-primary);
+
       &::before {
         color: var(--color-secondary) !important;
       }
     }
   }
+
   .mail:before,
   .talk:before {
     content: "\e0b7" !important;
   }
+
   .settings:before {
     content: "\f02e" !important;
   }
+
   .ban:before {
     content: "gavel" !important;
   }
+
   .ignore-add:before {
     content: "\e644" !important;
   }
+
   .fav-add:before {
     content: "\e7fe" !important;
   }
+
   .fav-remove::before {
     content: "\ef66" !important;
   }
+
   .ignore-remove::before {
     content: "\e643" !important;
   }
@@ -290,32 +328,39 @@ body {
     background-color: var(--background-secondary);
     z-index: -1;
   }
+
   &.x1200 .l-page {
     background: none;
     margin: 0 auto;
     padding: 0;
 
-    > div {
+    >div {
       margin: 0 !important;
     }
   }
+
   img {
     filter: brightness(60%) contrast(100%) grayscale(100%);
     border: 1px solid var(--border-primary);
   }
+
   a {
     color: var(--color-primary) !important;
     text-decoration: none !important;
   }
+
   footer {
     display: none !important;
   }
+
   &.p-profiles-show .lifetime {
     display: none !important;
   }
+
   .tipsy {
     display: none !important;
   }
+
   .headline,
   .midheadline,
   .subheadline {
@@ -332,12 +377,15 @@ body {
       }
     }
   }
-  .cc-2 > .c-column {
+
+  .cc-2>.c-column {
     width: unset !important;
   }
+
   .b-nothing_here {
     margin-left: unset;
   }
+
   .block {
     margin-bottom: 0 !important;
   }
@@ -350,25 +398,30 @@ body {
     display: grid;
     grid-template-columns: 1.8fr 1fr;
   }
+
   .c-left {
     @include createBlock;
     display: flex;
     flex-direction: column;
     z-index: 1;
     margin: unset !important;
+
     .activity {
       display: flex;
       flex-direction: column;
       height: 100%;
+
       .graph {
         height: 100% !important;
       }
     }
   }
+
   .activity .title {
     color: var(--color-primary) !important;
     margin-bottom: 20px !important;
   }
+
   .c-right {
     @include createBlock;
 
@@ -384,27 +437,33 @@ body {
           filter: unset;
         }
       }
-      > * {
+
+      >* {
         @include createBlock;
         width: 100% !important;
-        + * {
+
+        +* {
           margin-top: 30px !important;
         }
       }
     }
+
     .block:last-child {
       display: none;
     }
   }
+
   .block {
     &:nth-child(3) {
       @include createBlock;
     }
   }
+
   .achievements {
     .subheadline {
       display: none;
     }
+
     .cc-2 {
       .c-column {
         @include createBlock;
@@ -414,20 +473,24 @@ body {
         &:nth-child(2n) {
           display: none;
         }
+
         &:first-child {
           height: max-content !important;
         }
       }
     }
+
     .header {
       .title {
         color: var(--color-primary) !important;
         margin-bottom: 20px !important;
       }
+
       .size {
         display: none;
       }
     }
+
     .cc-achievements {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -435,12 +498,15 @@ body {
       .b-achievement {
         width: unset !important;
         margin-bottom: 0 !important;
+
         &.is-badge {
           .c-image {
             margin-right: 0;
             padding-top: unset !important;
+
             .inner {
               position: unset !important;
+
               a {
                 display: block !important;
 
@@ -448,9 +514,11 @@ body {
                   border: 0px solid var(--border-primary) !important;
                   border-radius: 30px;
                 }
+
                 .no-image {
                   border-radius: 30px;
                 }
+
                 img {
                   border: 1px solid var(--border-primary);
                   border-radius: 30px;
@@ -458,9 +526,11 @@ body {
               }
             }
           }
+
           &::before {
             display: none;
           }
+
           &::after {
             display: flex;
             justify-content: center;
@@ -474,6 +544,7 @@ body {
             z-index: 0 !important;
           }
         }
+
         &:hover,
         &.unavailable:hover {
           img {
@@ -492,6 +563,7 @@ body {
       background-color: var(--color-primary) !important;
     }
   }
+
   &.vertical {
     border: none !important;
 
@@ -499,10 +571,12 @@ body {
       .x_label {
         display: none;
       }
+
       .bar-container {
         .value {
           display: none !important;
         }
+
         .bar.min {
           width: 15px !important;
           border-radius: 30px;
@@ -514,16 +588,19 @@ body {
 
 // Franchises
 .b-badge {
+
   &.level-0,
   &.b-badge.unavailable {
     img {
       border: 1px solid var(--border-primary);
       border-radius: 30px;
     }
+
     &:hover img {
       opacity: 0.05;
     }
   }
+
   &:before {
     font-size: unset !important;
     width: unset !important;
